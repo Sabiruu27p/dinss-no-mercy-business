@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#081326">
+<meta name="description" content="DINSS NO MERCY menyediakan layanan top up game Mobile Legends, Free Fire, PUBG Mobile, Honor of Kings, Genshin Impact, dan Call of Duty Mobile. Pilih nominal dan hubungi admin melalui WhatsApp.">
+<title>DINSS NO MERCY | Game Top Up</title>
+<style>
+:root{--bg:#07111f;--panel:#101e33;--panel2:#142642;--blue:#2585ff;--cyan:#42d8ff;--text:#f4f8ff;--muted:#a8b8ce;--line:#263b58}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#102c50 0,transparent 34%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+.wrap{width:min(1080px,92%);margin:auto}.top{padding:20px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:1px}.mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#03101f;font-weight:900}
+nav{display:flex;justify-content:space-between;align-items:center}.tag{font-size:12px;color:var(--cyan);letter-spacing:2px}
+.hero{padding:64px 0 36px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.06;margin:12px 0}.hero p{color:var(--muted);max-width:570px}.hero-box{background:linear-gradient(145deg,#16345a,#0c192c);border:1px solid #31547d;border-radius:22px;padding:25px;box-shadow:0 18px 55px #0005}.hero-box strong{font-size:30px;display:block}.section{padding:32px 0}.section h2{font-size:27px;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 22px}.games{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.game{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px;display:flex;gap:13px;align-items:center}.game img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:11px;padding:4px}.game b{display:block}.game small{color:var(--muted)}
+/* Animasi lembut agar halaman terasa hidup tanpa mengganggu pembacaan */
+.mark{animation:brandFloat 4s ease-in-out infinite;box-shadow:0 0 20px #2585ff35}
+.hero-box{position:relative;overflow:hidden;background-size:180% 180%;animation:panelGlow 12s ease-in-out infinite}
+.hero-box::after{content:"";position:absolute;inset:-45% auto auto -25%;width:65%;height:190%;background:linear-gradient(105deg,transparent 35%,#ffffff0d 50%,transparent 65%);transform:rotate(12deg);animation:softShine 9s ease-in-out infinite;pointer-events:none}
+.hero-box>*{position:relative;z-index:1}
+.hero h1 span{background:linear-gradient(90deg,#42d8ff,#8bbcff,#42d8ff);background-size:200% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:textFlow 7s linear infinite}
+.game{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.game:hover,.game:focus-within{transform:translateY(-4px);border-color:#398bd0;box-shadow:0 10px 25px #0003}
+.game img{transition:transform .25s ease}
+.game:hover img{transform:scale(1.06) rotate(-3deg)}
+button{position:relative;overflow:hidden;transition:transform .2s ease,filter .2s ease}
+button::after{content:"";position:absolute;top:-70%;left:-35%;width:22%;height:240%;background:#ffffff35;transform:rotate(25deg);animation:buttonShine 5.5s ease-in-out infinite;pointer-events:none}
+button:active{transform:scale(.985)}
+@keyframes brandFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes panelGlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes softShine{0%,20%{transform:translateX(-30%) rotate(12deg);opacity:0}40%{opacity:1}70%,100%{transform:translateX(250%) rotate(12deg);opacity:0}}
+@keyframes textFlow{to{background-position:200% center}}
+@keyframes buttonShine{0%,55%{left:-35%;opacity:0}65%{opacity:.8}90%,100%{left:130%;opacity:0}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+
+.order{background:linear-gradient(160deg,#122743,#0d192b);border:1px solid #2c496c;border-radius:22px;padding:24px;max-width:760px}.field{margin:0 0 16px}.field label{display:block;font-weight:700;margin-bottom:7px}.field input,.field select{width:100%;background:#071426;border:1px solid #355071;border-radius:10px;padding:13px;color:white;font-size:15px;outline:none}.field input:focus,.field select:focus{border-color:var(--cyan)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.price{padding:16px;background:#071426;border:1px solid #2a4667;border-radius:12px;margin:6px 0 18px}.price span{color:var(--muted);font-size:13px;display:block}.price strong{font-size:27px;color:var(--cyan)}button{width:100%;border:0;border-radius:11px;padding:15px;background:linear-gradient(90deg,#1682ff,#27c6ed);color:#04111f;font-size:16px;font-weight:800;cursor:pointer}button:hover{filter:brightness(1.08)}.note{font-size:12px;color:var(--muted);margin-top:12px}.contact{margin:24px 0 44px;padding:22px;border:1px solid var(--line);border-radius:16px;background:#0e1b2d}.contact a{color:var(--cyan);font-weight:700;text-decoration:none}footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:13px}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding:42px 0 22px}.games{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.hero-box{padding:19px}}
+@media(max-width:420px){.games{grid-template-columns:1fr}.order{padding:17px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><nav><div class="brand"><div class="mark">DN</div><div>DINSS NO MERCY<div class="tag">GAME TOP UP STORE</div></div></div><div class="tag">FAST • SIMPLE • SECURE</div></nav></div></header>
+<main class="wrap">
+<section class="hero"><div><div class="tag">WELCOME TO DINSS NO MERCY</div><h1>Top Up Game<br><span style="color:var(--cyan)">Lebih Praktis.</span></h1><p>Pilih game, tentukan nominal top up, masukkan ID akun, lalu kirim detail pesanan langsung ke admin melalui WhatsApp.</p></div><div class="hero-box"><div class="tag">LAYANAN TOP UP</div><strong>6 GAME POPULER</strong><p>Mobile Legends, Free Fire, PUBG Mobile, Honor of Kings, Genshin Impact, dan Call of Duty: Mobile.</p></div></section>
+<section class="section"><h2>Pilihan Game</h2><p class="sub">Pilih game favoritmu pada formulir pemesanan di bawah.</p>
+<div class="games">
+<div class="game"><img src="https://image.pngaaa.com/873/1292873-middle.png" alt="Mobile Legends"><div><b>Mobile Legends</b><small>Diamond</small></div></div>
+<div class="game"><img src="https://www.citypng.com/public/uploads/preview/official-free-fire-battlegrounds-logo-701751694791335un11hpdefy.png" alt="Free Fire"><div><b>Free Fire</b><small>Diamond</small></div></div>
+<div class="game"><img src="https://www.citypng.com/public/uploads/preview/hd-player-unknown-pubg-battlegrounds-mobile-logo-701751694790566xijfg37aos.png" alt="PUBG Mobile"><div><b>PUBG Mobile</b><small>UC</small></div></div>
+<div class="game"><img src="https://sg-hok.playerinfinite.com/cms/nrft/doc/parse/a48f1fb3-0745-4d47-abc8-c39716fef728_html_edf668f68f87736b-710x729-ori_s_80_50_ori_q_80.webp" alt="Honor of Kings"><div><b>Honor of Kings</b><small>Token</small></div></div>
+<div class="game"><img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Genshin_Impact_logo.svg" alt="Genshin Impact"><div><b>Genshin Impact</b><small>Genesis Crystal</small></div></div>
+<div class="game"><img src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/08f7b9ac-24b5-4830-09e4-1789e8b19300/preview" alt="Call of Duty Mobile"><div><b>Call of Duty: Mobile</b><small>CP</small></div></div>
+</div></section>
+<section class="section"><h2>Form Pemesanan</h2><p class="sub">Harga perkiraan ditampilkan otomatis sesuai nominal pilihan.</p>
+<div class="order">
+<div class="field"><label for="game">1. Pilih game</label><select id="game"><option value="ml">Mobile Legends</option><option value="ff">Free Fire</option><option value="pubg">PUBG Mobile</option><option value="hok">Honor of Kings</option><option value="genshin">Genshin Impact</option><option value="codm">Call of Duty: Mobile</option></select></div>
+<div class="grid2"><div class="field"><label id="idLabel" for="playerId">2. User ID</label><input id="playerId" placeholder="Masukkan User ID" autocomplete="off"></div><div class="field" id="serverWrap"><label id="serverLabel" for="server">Server / Zone ID</label><input id="server" placeholder="Masukkan server / Zone ID" autocomplete="off"></div></div>
+<div class="field"><label for="package">3. Pilih jumlah top up</label><select id="package"></select></div>
+<div class="field"><label for="payment">4. Pilih metode pembayaran</label><select id="payment"><option value="Transfer Bank">Transfer Bank</option><option value="DANA">DANA</option><option value="GoPay">GoPay</option><option value="OVO">OVO</option><option value="ShopeePay">ShopeePay</option><option value="QRIS">QRIS</option></select></div>
+<div class="price"><span>Perkiraan harga</span><strong id="price">Rp0</strong><span id="packageInfo">Pilih nominal untuk melihat harga.</span></div>
+<button id="send">Pesan via WhatsApp</button>
+<div class="note">Harga merupakan estimasi dan dapat berubah. Pilihan metode pembayaran adalah preferensi; admin akan mengonfirmasi metode yang tersedia dan mengirim detail pembayaran melalui WhatsApp. Pembayaran belum diproses otomatis di website. Jangan pernah memberikan password atau kode OTP akun game.</div>
+</div></section>
+<section class="contact"><h2>Hubungi Admin</h2><p>Untuk pertanyaan dan konfirmasi pesanan, hubungi admin DINSS NO MERCY.</p><a href="https://wa.me/6281959611679" target="_blank" rel="noopener">WhatsApp: +62 819-5961-1679</a></section>
+</main>
+<footer><div class="wrap">© 2026 DINSS NO MERCY. Seluruh merek dan logo game merupakan milik pemilik masing-masing.</div></footer>
+<script>
+const catalog={
+ml:{label:"User ID",server:true,serverLabel:"Zone ID",items:[
+["5 Diamond",1800],["10 Diamond",3500],["28 Diamond",9000],["42 Diamond",13300],["59 Diamond",18100],["86 Diamond",25200],["128 Diamond",40000],["170 Diamond",50900],["257 Diamond",79600],["344 Diamond",103800],["429 Diamond",129000],["514 Diamond",153800],["706 Diamond",206800],["875 Diamond",256600],["1.050 Diamond",313100],["1.412 Diamond",424400],["2.010 Diamond",559900],["2.901 Diamond",690100]]},
+ff:{label:"Player ID",server:false,items:[
+["5 Diamond",1100],["10 Diamond",2200],["50 Diamond",8000],["70 Diamond",10000],["100 Diamond",14500],["140 Diamond",20000],["150 Diamond",22000],["210 Diamond",30000],["260 Diamond",37000],["280 Diamond",40000],["355 Diamond",46000],["425 Diamond",58000],["500 Diamond",69000],["635 Diamond",87000],["720 Diamond",97000],["860 Diamond",116000],["1.000 Diamond",135000],["1.075 Diamond",145000],["1.440 Diamond",190000],["2.160 Diamond",285000]]},
+pubg:{label:"Character ID",server:false,items:[
+["60 UC",19000],["120 UC",38000],["325 UC",80500],["385 UC",114000],["660 UC",163000],["780 UC",221000],["1.800 UC",410000],["2.460 UC",645000],["3.850 UC",815000],["8.100 UC",1630000]]},
+hok:{label:"Player ID",server:false,items:[
+["8 Token",3500],["16 + 1 Token",4000],["23 + 2 Token",5500],["80 + 8 Token",16500],["Weekly Card",19500],["160 + 16 Token",34000],["240 + 17 Token",48000],["Weekly Card Plus",57000],["400 + 40 Token",82000],["560 + 45 Token",111000],["800 + 95 Token",163000],["1.200 + 153 Token",244000],["1.600 + 190 Token",365000],["2.400 + 324 Token",485000],["4.000 + 580 Token",815000],["8.000 + 1.160 Token",1635000]]},
+genshin:{label:"UID",server:true,serverLabel:"Server",serverPlaceholder:"Asia / America / Europe / TW-HK-MO",items:[
+["60 Genesis Crystal",13500],["300 + 30 Genesis Crystal",66000],["980 + 110 Genesis Crystal",195000],["1.980 + 260 Genesis Crystal",410000],["3.280 + 600 Genesis Crystal",635000],["6.480 + 1.600 Genesis Crystal",1275000],["Blessing of the Welkin Moon",66000]]},
+codm:{label:"Player UID",server:false,items:[
+["31 CP",5000],["63 CP",9000],["128 CP",17500],["321 CP",43000],["645 CP",85000],["800 CP",102000],["1.373 CP",170000],["2.060 CP",255000],["2.750 CP",325000],["3.564 CP",430000],["5.618 CP",615000],["7.656 CP",845000],["15.312 CP",1690000]]}
+};
+const game=document.getElementById("game"),pkg=document.getElementById("package"),price=document.getElementById("price"),info=document.getElementById("packageInfo"),serverWrap=document.getElementById("serverWrap"),serverLabel=document.getElementById("serverLabel"),server=document.getElementById("server"),idLabel=document.getElementById("idLabel"),playerId=document.getElementById("playerId");
+const rupiah=n=>"Rp"+new Intl.NumberFormat("id-ID").format(n);
+function refresh(){
+ const data=catalog[game.value];pkg.innerHTML="";
+ data.items.forEach((it,i)=>{const o=document.createElement("option");o.value=i;o.textContent=it[0]+" — "+rupiah(it[1]);pkg.appendChild(o)});
+ idLabel.textContent="2. "+data.label;serverWrap.style.display=data.server?"block":"none";
+ if(data.server){serverLabel.textContent=data.serverLabel||"Server / Zone ID";server.placeholder=data.serverPlaceholder||"Masukkan "+data.serverLabel}
+ updatePrice();
+}
+function updatePrice(){const data=catalog[game.value],it=data.items[Number(pkg.value)||0];price.textContent=rupiah(it[1]);info.textContent=it[0]+" • harga perkiraan";}
+game.addEventListener("change",refresh);pkg.addEventListener("change",updatePrice);
+document.getElementById("send").addEventListener("click",()=>{
+ const data=catalog[game.value],it=data.items[Number(pkg.value)||0],id=playerId.value.trim(),srv=server.value.trim(),payment=document.getElementById("payment").value;
+ if(!id){alert("Masukkan User ID terlebih dahulu.");playerId.focus();return}
+ if(data.server&&!srv){alert("Lengkapi "+(data.serverLabel||"Server / Zone ID")+" terlebih dahulu.");server.focus();return}
+ const textMsg=["Halo admin DINSS NO MERCY, saya ingin memesan top up:","Game: "+game.options[game.selectedIndex].text,"ID: "+id,...(data.server?[(data.serverLabel||"Server")+": "+srv]:[]),"Nominal: "+it[0],"Estimasi harga: "+rupiah(it[1]),"Metode pembayaran pilihan: "+payment,"Mohon konfirmasi harga, ketersediaan, dan detail pembayaran sebelum saya membayar."].join("\n");
+ window.open("https://wa.me/6281959611679?text="+encodeURIComponent(textMsg),"_blank");
+});
+refresh();
+</script>
+</body></html>
